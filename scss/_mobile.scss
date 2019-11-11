@@ -6,8 +6,37 @@
 }
 // Desktops and Laptops
 @include mediaLg {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
   .projects {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "heading"
+      "job1"
+      "job2"
+      "job3";
+    grid-template-columns: 1fr;
+
+    .bio-image {
+      width: 50%;
+    }
+    .bio {
+      font-size: 1.3rem;
+      li {
+        margin-top: 10px;
+      }
+    }
   }
 }
 
@@ -55,10 +84,21 @@
     grid-template-areas:
       "bioimage"
       "bio"
+      "heading"
       "job1"
       "job2"
       "job3";
     grid-template-columns: 1fr;
+
+    .bio-image {
+      width: 70%;
+    }
+    .bio {
+      font-size: 1rem;
+      li {
+        margin-top: 10px;
+      }
+    }
   }
 
   .projects {
@@ -74,5 +114,11 @@
 
   .projects {
     grid-template-columns: 1fr;
+  }
+  .bio {
+    font-size: 1rem;
+    li {
+      margin-top: 10px;
+    }
   }
 }

@@ -6,9 +6,9 @@
 }
 
 // how to modify deault font size globally
-html {
-  font-size: 10px;
-}
+// html {
+//   font-size: 10px;
+// }
 
 body {
   @include backround();
@@ -84,30 +84,54 @@ main {
 }
 .about-info {
   display: grid;
+
+  overflow: hidden;
   grid-gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
+    "heading heading heading"
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 
+  .heading {
+    display: inline;
+    grid-area: heading;
+    text-align: center;
+    font-size: 3rem;
+    span {
+      background: lighten($primary-color, 10);
+      padding: 0rem 1rem;
+      border-radius: 20%;
+    }
+  }
   .bio-image {
     grid-area: bioimage;
     margin: auto;
-    width: 70%;
+    width: 300px;
     border-radius: 50%;
     border: $secondary-color 3px solid;
   }
   .bio {
+    font-size: 1.5rem;
     grid-area: bio;
+    li {
+      margin-top: 10px;
+    }
   }
   .job-1 {
     grid-area: job1;
+    text-align: center;
+    font-size: 2em;
   }
   .job-2 {
     grid-area: job2;
+    text-align: center;
+    font-size: 2em;
   }
   .job-3 {
     grid-area: job3;
+    text-align: center;
+    font-size: 2em;
   }
   .job {
     background: lighten($primary-color, 5);
@@ -189,5 +213,35 @@ main {
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  // overflow: hidden;
+}
+.technology {
+  font-size: 2rem;
+  background: lighten($primary-color, 20);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  border: 1.5px $secondary-color solid;
+  margin: 5px;
+}
+q {
+  display: block;
+  float: right;
+}
+shivam {
+  display: block;
+  float: right;
+  // color: red;
 }
 @import "mobile";
