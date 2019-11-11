@@ -4,7 +4,8 @@
   "description": "this repository contains my portfolio website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -16,8 +17,9 @@
   "bugs": {
     "url": "https://github.com/15999shivam/portfolio/issues"
   },
-  "homepage": "https://github.com/15999shivam/portfolio#readme",
+  "homepage": "https://15999shivam.github.io/portfolio",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.13.0"
   }
 }
