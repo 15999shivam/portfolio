@@ -182,7 +182,8 @@ main {
     font-size: 1.5rem;
     grid-area: bio; }
     .about-info .bio li {
-      margin-top: 10px; }
+      margin-top: 10px;
+      text-align: start; }
   .about-info .job-1 {
     grid-area: job1;
     text-align: center;
@@ -336,7 +337,7 @@ shivam {
     .about-info .bio-image {
       width: 70%; }
     .about-info .bio {
-      font-size: 1rem; }
+      font-size: 1.2rem; }
       .about-info .bio li {
         margin-top: 10px; }
   .projects {
@@ -350,4 +351,20 @@ shivam {
   .bio {
     font-size: 1rem; }
     .bio li {
-      margin-top: 10px; } }
+      margin-top: 10px; }
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+      font-size: 4rem; }
+  #contact .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-size: 3rem; }
+  .boxes div {
+    font-size: 1.4rem;
+    padding: 1rem 0.7rem; }
+    .boxes div:hover {
+      padding: 0.5rem 0.5rem; } }

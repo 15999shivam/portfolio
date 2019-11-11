@@ -94,7 +94,7 @@
       width: 70%;
     }
     .bio {
-      font-size: 1rem;
+      font-size: 1.2rem;
       li {
         margin-top: 10px;
       }
@@ -119,6 +119,33 @@
     font-size: 1rem;
     li {
       margin-top: 10px;
+    }
+  }
+
+  main {
+    align-items: center;
+    text-align: center;
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+      font-size: 4rem;
+    }
+  }
+  #contact {
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+      font-size: 3rem;
+      // color: red;
+    }
+  }
+  .boxes {
+    div {
+      font-size: 1.4rem;
+      padding: 1rem 0.7rem;
+      &:hover {
+        padding: 0.5rem 0.5rem;
+      }
     }
   }
 }
